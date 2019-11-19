@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style> 
+  /* css3动画:
+	会动的画 从什么状态到什么状态的过程
+	需要动画序列规定这个动画->@keyframes
+	from起始位置
+	to结束位置
+	 */
+/*动画序列 自定义名称*/
+/*绑定动画序列:名称 时间 脚步 循环*/
+/* animation: swk 1.4s steps(8) infinite;	 */
+body{
+			/*清除默认边距 */
+			margin: 0px;
+			background-image: url(bg.png);
+		}
+		.footer{
+			width: 760px;
+			height: 240px;
+			margin: 350px auto 0 auto;
+		}
+		.west{
+			float: left;
+			width: 190px;
+			height: 240px;
+			/*背景不重复*/
+			background-repeat: no-repeat;
+		}
+		.west:nth-of-type(1){
+			background-image: url(west_01.png);
+			animation: swk 1.4s steps(8) infinite;	
+		}
+		.west:nth-of-type(2){
+			background-image: url(west_02.png);
+			animation: zbj 1.4s steps(8) infinite;
+		}
+		.west:nth-of-type(3){
+			margin: -30px;
+			background-image: url(west_03.png);
+			animation: ts 1.4s steps(8) infinite;
+
+		}
+		.west:nth-of-type(4){
+			background-image: url(west_04.png);
+			animation: ss 1.4s steps(8) infinite;
+		}
+		@keyframes swk{
+			from{
+				background-position-x:0px;
+			}
+			to{
+				background-position-x:-1600px;
+			}
+		}
+		@keyframes zbj{
+			from{
+				background-position-x:0px;
+			}
+			to{
+				background-position-x:-1600px;
+			}
+		}
+		@keyframes ts{
+			from{
+				background-position-x:0px;
+			}
+			to{
+				background-position-x:-1360px;
+			}
+		}
+		@keyframes ss{
+			from{
+				background-position-x:0px;
+			}
+			to{
+				background-position-x:-1680px;
+			}
+		}
+</style>
+<body>
+    <div class="footer">
+        <div class="west"></div>
+        <div class="west"></div>
+        <div class="west"></div>
+        <div class="west"></div>
+      </div>
+</body>
+</html>

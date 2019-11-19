@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    .content{
+      width: 1000px;
+      height: 620px;
+      margin: 20px auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .c1,.c2,.c3,li{
+      background-color: #e8e8e8;
+      background-repeat: no-repeat;
+    }
+    .c1{
+      width: 610px;
+      height: 370px;
+      background-image: url("1.png");
+      background-position: 80% 70%;
+      position: relative;
+    }
+    .c11{
+      width: 235px;
+      height: 205px;
+      position: absolute;
+      left:66px;
+      top:76px;
+    }
+    .c2{
+      width: 380px;
+      height: 370px;
+      background-image: url("2.png");
+      background-position: 80% 96%;
+      position: relative;
+    }
+    .c22{
+      width: 245px;
+      height: 205px;
+      position: absolute;
+      top:78px;
+      left:22px;
+    }
+    .c3{
+      width: 381px;
+      height: 235px;
+      background-image: url("study_computer_img3.png");
+      background-position: 80% 50%;
+      align-self: flex-end;
+      position: relative;
+    }
+    .c33{
+      width: 130px;
+      height: 125px;
+      position: absolute;
+      top:44px;
+      left:34px;
+    }
+    ul{
+      text-align: center;
+      list-style: none;
+      align-self: flex-end;
+    }
+    ul li{
+      float: left;
+      width: 196px;
+      height: 235px;
+      margin-left:10px;
+    }
+    p{
+      font-size: 14px;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      width: 130px;
+      height: 40px;
+      background-color: #20adf3;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+    }
+    .a1{
+      width: 102px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 14px;
+    }
+    a:hover{
+      width: 132px;
+      height: 42px;
+      background-image: linear-gradient(to top, #20adf3 0,#1d99d8 100%);
+    }
+    .a1:hover{
+      width: 104px;
+      height: 30px;
+    }
+    h3{
+      font-family: "黑体";
+      font-size: 30px;
+      font-weight: normal;
+    }
+    .c333{
+      font-family: "黑体";
+      font-size: 22px;
+    }
+    .price{
+      color:#20adf3;
+      font-size: 20px;
+      margin-top:10px;
+      margin-bottom: 16px;
+    }
+    .price1{
+      color:#20adf3;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .price2{
+      color:#20adf3;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="c1">
+      <div class="c11">
+        <h3> Apple MacBook Air系列</h3>
+        <p>酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</p>
+        <div class="price">￥6988.00</div>
+        <a href="#">查看详情</a>
+      </div>
+    </div>
+    <div class="c2">
+      <div class="c22">
+        <h3> 小米Air 金属超轻薄</h3>
+            <p>酷睿双核i5处理器|512GB SSD|2GB内存|英特尔HD显卡</p>
+            <div class="price">￥3488.00</div>
+            <a href="#">查看详情</a>
+      </div>
+    </div>
+    <div class="c3">
+      <div class="c33">
+        <h3 class="c333"> 联想E480C 轻薄系列</h3>
+        <div class="price1">￥5399.00</div>
+        <a href="#">查看详情</a>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <img src="study_computer_img3.png" alt="">
+        <p>华硕RX310 金属超极本</p>
+        <div class="price2">￥4966.00</div>
+        <a href="#" class="a1">查看详情</a>
+      </li>
+      <li>
+        <img src="study_computer_img4.png" alt="">
+        <p>联想小新700 电竞版游戏本</p>
+        <div class="price2">￥6299.00</div>
+        <a href="#" class="a1">查看详情</a>
+      </li>
+      <li>
+        <img src="study_computer_img5.png" alt="">
+          <p>戴尔灵越燃7000 轻薄窄边</p>
+          <div class="price2">￥5199.00</div>
+          <a href="#" class="a1">查看详情</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
